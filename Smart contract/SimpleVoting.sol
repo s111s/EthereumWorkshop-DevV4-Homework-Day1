@@ -41,6 +41,10 @@ contract Voting {
   }
 
   function candidateCount() public view returns (uint256) {
-      return candidateList.length;
+    return candidateList.length;
+  }
+
+  function addNewCandidate(string memory candidateName) public {
+    candidateList.push(candidateName);
   }
 }
