@@ -17,7 +17,11 @@ contract Voting {
   /* Broadcast event when a user voted
   */
   event VoteReceived(address user, string candidate);
-
+  
+  /* Broadcast event when a candidate addede
+  */
+  event CandidateAdded(string candidate);
+  
   /* This is the constructor which will be called once and only once - when you
   deploy the contract to the blockchain. When we deploy the contract,
   we will pass an array of candidates who will be contesting in the election
@@ -46,5 +50,8 @@ contract Voting {
 
   function addNewCandidate(string memory candidateName) public {
     candidateList.push(candidateName);
+    
+    // Broadcast candidate added event
+    emit CandidateAdded(candidateName);
   }
 }

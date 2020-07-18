@@ -3,6 +3,7 @@
 Homework day1:
 - Create addNewCandidate function in contract
 - UI for call addNewCandidate function
+contract deployed on kovan network at contract address: 0x49aED8379ea2D49cD32cAD7B8866fE6d07C366c5
 
 <img width="1631" alt="Screen Shot 2562-09-24 at 12 43 08" src="https://user-images.githubusercontent.com/459912/65484242-febaef00-dec8-11e9-9732-607a4990bdb8.png">
 
